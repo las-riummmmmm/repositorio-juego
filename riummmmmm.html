@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Erizoc</title>
+		<meta name="description" content="">
+		<meta name="author" content="las riummmmmm">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	</head>
+	<style>
+		canvas {
+			border: 1px solid;
+		}
+		#contenedor {
+			position: relative;
+			width: 1000px;
+			height: 600px;
+		}
+		#modal {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			left: 0px;
+			background-color: rgba(0,0,0,0.7);
+		}
+		#boton {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+		}
+	</style>
+	<body onkeyup="saltar(event);">
+		<div id="contenedor">
+		<canvas width="1000" height="600" id="canvas">
+		</canvas>
+		<div id="modal">
+			<button id="boton" onclick="iniciar();">
+				<img src="imagenes/play.png" id="imgbtn" />
+			</button>
+		</div>
+		</div>
+		<script src="style.js"></script>
+	</body>
+</html>
