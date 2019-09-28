@@ -84,7 +84,7 @@ class sonic extends Objeto {
 	}
 }
 
-class Cactus extends Objeto {
+class pared extends Objeto {
 	constructor(x){
 		super();
 		this.x = x;
